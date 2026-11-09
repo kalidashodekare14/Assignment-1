@@ -52,6 +52,7 @@ interface User {
   email: string;
   age: number;
 }
+
 cosnt user: User = {
     name: "ABC",
     email: "abc@gmail.com",
