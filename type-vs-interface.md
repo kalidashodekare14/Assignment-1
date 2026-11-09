@@ -10,4 +10,11 @@ In this TypeScript, type alias and interface used to define data stracture and s
 
 1. When we will use type alias?
 
-We will use type alias to define literals, unions, tuples and primitives data. As a result, Those data will be save and 
+We will use type alias to define literals, unions, tuples and primitives data. Once defined, a type alias can be resued in different parts of application. It helps developers write code and organized code. It also makes complex types easier to understand and maintain. If we define type alias we have to write type keword then will bave type name after that will have = and value.
+
+```ts
+const Id = number;
+```
+
+
+
