@@ -1,11 +1,11 @@
-const multiplyValue = (value: number, multiplier?: number) => {
+const multiplyValue = (value: number, multiplier?: number): number => {
   if (typeof multiplier === "undefined") {
     return value * 2;
   }
   return value * multiplier;
 };
 
-const processInput = (value: string | number | boolean) => {
+const processInput = (value: string | number | boolean): string | number => {
   if (typeof value === "string") {
     return value.toLowerCase().trim();
   }
