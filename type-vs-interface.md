@@ -6,4 +6,8 @@ Type aliases and interface is used to define custom data stracture and shapes. A
 
 ## Body
 
-In this TypeScript, type alias and interface used to define data stracture and shapes. They help developer to define type properly  
+In this TypeScript, type alias and interface used to define data stracture and shapes. They help developer to define type properly. Both type alias and interface have differentce but they use same purpose. The alias create and define to type keyword. On the ohter hand, The interface create and define to interface keyword.
+
+1. When we will use type alias?
+
+We will use type alias to define literals, unions, tuples and primitives data. 
