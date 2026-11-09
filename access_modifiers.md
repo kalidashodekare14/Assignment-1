@@ -77,3 +77,27 @@ console.log(employee1.phoneNumber); //Error
 const manager1 = new Manager("ABC", 18, "0175845895");
 console.log(manager1.showPhoneNumber());
 ```
+
+### 2. Readonly Modifire
+
+The `readonly` modifier is used with class properties. It allows us to assign a value only during declaration or inside the constructor. Once assigned, the value cannot be changed. It helps prevent accidental modifications to properties.
+
+```ts
+
+class Employee {
+  public name: string;
+  readonly employeeId: number;
+
+  constructor(name: string, employeeId: number) {
+    this.name = name;
+    this.employeeId = employeeId;
+  }
+}
+
+const employee1 = new Employee("ABC", 101);
+
+console.log(employee1.employeeId); // 101
+
+employee1.employeeId = 102; // Error
+
+```
