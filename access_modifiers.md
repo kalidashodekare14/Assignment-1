@@ -48,7 +48,7 @@ const employee1 = new Employee("ABC", 18, "01728659562");
 console.log(employee1.phoneNumber); // Error
 ```
 
-### 2. Protected Modifire
+### 3. Protected Modifire
 
 The `protected` modifier can be used with class properties and methods. It allows us to access properties and methods within the same class and its subclasses through inheritance. However, we cannot access `protected` members directly from outside the class.
 
@@ -78,7 +78,7 @@ const manager1 = new Manager("ABC", 18, "0175845895");
 console.log(manager1.showPhoneNumber());
 ```
 
-### 2. Readonly Modifire
+### 4. Readonly Modifire
 
 The `readonly` modifier is used with class properties. It allows us to assign a value only during declaration or inside the constructor. Once assigned, the value cannot be changed. It helps prevent accidental modifications to properties.
 
@@ -101,3 +101,8 @@ console.log(employee1.employeeId); // 101
 employee1.employeeId = 102; // Error
 
 ```
+
+
+## Conclusion
+
+Access modifiers help us control access to class properties and methods. public, private, and protected control accessibility. readonly prevents properties from being reassigned. These modifiers help us maintain encapsulation and write safer, more organized code.
