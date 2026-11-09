@@ -47,3 +47,33 @@ class Employee {
 const employee1 = new Employee("ABC", 18, "01728659562");
 console.log(employee1.phoneNumber); // Error
 ```
+
+### 2. Protected Modifire
+
+The `private` modifier can be used with class properties and methods. It allows us to access properties and methods within the same class and subclass through inheritance. We cannot access `private` members directly from outside the class.
+
+```ts
+class Employee {
+  public name: string;
+  public age: number;
+  protected phoneNumber: string;
+
+  constructor(name: string, age: number, phoneNumber: string) {
+    this.name = name;
+    this.age = age;
+    this.phoneNumber = phoneNumber;
+  }
+}
+
+class Manager extends Employee {
+  showPhoneNumber() {
+    `${this.name} phone number is ${this.phoneNumber}`;
+  }
+}
+
+const employee1 = new Employee("ABC", 18, "01728659562");
+console.log(employee1.phoneNumber); //Error
+
+const manager1 = new Manager("ABC", 18, "0175845895");
+console.log(manager1.showPhoneNumber());
+```
