@@ -58,4 +58,33 @@ cosnt user: User = {
     email: "abc@gmail.com",
     age: 20
 }
+
+interface Animal {
+  species: string;
+}
+
+interface Cat extends Animal {
+  breed: string;
+}
+
+const cat: Cat = {
+  species: "Felix Catus",
+  breed: "Persian",
+};
+
+
+interface IEmployee {
+  id: number;
+}
+
+interface IEmployee {
+  name: string;
+}
+
+const employee: IEmployee = {
+  id: 123,
+  name: "ABC",
+};
+
+
 ```
