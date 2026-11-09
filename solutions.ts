@@ -45,7 +45,7 @@ interface Course {
   isPublished: boolean;
 }
 
-const getPopularCourses = (courses: Course[], minStudents: number) => {
+const getPopularCourses = (courses: Course[], minStudents: number): Course[] => {
   const courseReturn: Course[] = [];
   courses.map((course) => {
     if (course.isPublished === true && course.students >= minStudents) {
