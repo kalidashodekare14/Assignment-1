@@ -10,4 +10,4 @@ In this TypeScript, type alias and interface used to define data stracture and s
 
 1. When we will use type alias?
 
-We will use type alias to define literals, unions, tuples and primitives data. 
+We will use type alias to define literals, unions, tuples and primitives data. As a result, Those data will be save and 
