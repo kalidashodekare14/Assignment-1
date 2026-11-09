@@ -85,6 +85,8 @@ const employee: IEmployee = {
   id: 123,
   name: "ABC",
 };
-
-
 ```
+
+## Conclusion
+
+Both type alias and interface help to define custom type in TypeScript. The type alias define different type like primitive, union, tuple and object. On the other hand, an interface is maily used to define object stracture.
