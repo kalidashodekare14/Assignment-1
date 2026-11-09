@@ -50,7 +50,7 @@ console.log(employee1.phoneNumber); // Error
 
 ### 2. Protected Modifire
 
-The `private` modifier can be used with class properties and methods. It allows us to access properties and methods within the same class and subclass through inheritance. We cannot access `private` members directly from outside the class.
+The `protected` modifier can be used with class properties and methods. It allows us to access properties and methods within the same class and its subclasses through inheritance. However, we cannot access `protected` members directly from outside the class.
 
 ```ts
 class Employee {
