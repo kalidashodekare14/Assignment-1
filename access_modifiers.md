@@ -26,3 +26,24 @@ class Employee {
 const employee1 = new Employee("ABC", 18);
 console.log(employee1.name);
 ```
+
+### 2. Private Modifire
+
+The `private` modifier can be used with class properties and methods. It allows us to access properties and methods only within the same class. We cannot access `private` members directly from outside the class. They are also not accessible in subclasses through inheritance.
+
+```ts
+class Employee {
+  public name: string;
+  public age: number;
+  private phoneNumber: string;
+
+  constructor(name: string, age: number, phoneNumber: string) {
+    this.name = name;
+    this.age = age;
+    this.phoneNumber = phoneNumber;
+  }
+}
+
+const employee1 = new Employee("ABC", 18, "01728659562");
+console.log(employee1.phoneNumber); // Error
+```
