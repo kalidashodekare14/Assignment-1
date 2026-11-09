@@ -6,4 +6,23 @@ In this TypeScript, access modifires access to enforce encapsulation in OOP. Tho
 
 ## Body
 
-Access modifires are used in class and are important in OOP. When we define a class, we can specify which properties and methods can be accessed by user. As a result, We can control access to class members and protect internal data.
+Access modifires are used in class and are important in OOP. When we define a class, we can specify which properties and methods can be accessed by user. As a result, We can control access to class members and protect internal data. We will see how to work those access modifiers.
+
+### 1. Public Modifire
+
+The `public` modifier can be used with class properties and methods. It allows us to access class members from anywhere, both inside and outside the class. We can also access public members from a subclass through inheritance.
+
+```ts
+class Employee {
+  public name: string;
+  public age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const employee1 = new Employee("ABC", 18);
+console.log(employee1.name);
+```
