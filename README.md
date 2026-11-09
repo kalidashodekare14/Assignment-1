@@ -6,5 +6,5 @@ In this assignment, I solved eight TypeScript problems and practiced core TypeSc
 
 ## Blog Posts
 
-1. [Type Alias vs Interface](./type-vs-interface.md);
-2. [Understanding Access Modifiers](./access_modifiers.md);
+1. [Type Alias vs Interface](./type-vs-interface.md)
+2. [Understanding Access Modifiers](./access_modifiers.md)
