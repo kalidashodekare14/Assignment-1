@@ -8,7 +8,7 @@ Type aliases and interface is used to define custom data stracture and shapes. A
 
 In this TypeScript, type alias and interface used to define data stracture and shapes. They help developer to define type properly. Both type alias and interface have differentce but they use same purpose. The alias create and define to type keyword. On the ohter hand, The interface create and define to interface keyword.
 
-1. When we will use type alias?
+- When we will use type alias?
 
 We will use type alias to define literals, unions, tuples and primitives data. Once defined, a type alias can be resued in different parts of application. It helps developers write code and organized code. It also makes complex types easier to understand and maintain. If we define a type alias, we have to write the type keyword first, followed by the type name, then an = sign and the type value.
 
@@ -40,4 +40,21 @@ const user: User = {
   name: "Kalidash",
   age: 25,
 };
+```
+
+- When we will use type interface?
+
+We use an interface to define the structure of an object. Unlike type aliases, interfaces cannot directly define primitive types, union types, or tuple types. We can extend one interface with another interface using the extends keyword. We can also create multiple interfaces with the same name without getting an error because TypeScript automatically merges them.
+
+```ts
+interface User {
+  name: strnig;
+  email: string;
+  age: number;
+}
+cosnt user: User = {
+    name: "ABC",
+    email: "abc@gmail.com",
+    age: 20
+}
 ```
